@@ -1,3 +1,9 @@
+# First, You need to create .env file inside of the root folder with this inside:
+`
+REACT_APP_GITHUB_TOKEN=YourGitHubToken
+REACT_APP_GITHUB_API_URL="https://api.github.com/graphql"
+`
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
