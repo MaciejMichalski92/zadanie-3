@@ -14,7 +14,8 @@ interface EdgesArrayTypes {
 	}}
 
 export interface UserDataTypes {
-  user?:{
+	
+  user?: {
 		avatarUrl?: string,
 		name?: string,
 		repositories?: {

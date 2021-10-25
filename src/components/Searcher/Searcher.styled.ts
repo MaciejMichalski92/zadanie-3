@@ -24,7 +24,7 @@ export const StyledSearchbar = styled.div`
 
 `
 
-export const StyledForm = styled.form`
+export const StyledSearchDiv = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-items: center;

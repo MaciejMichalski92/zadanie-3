@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   ApolloClient,
   InMemoryCache,
@@ -6,7 +5,7 @@ import {
   gql,
 } from "@apollo/client";
 import { setContext } from '@apollo/client/link/context';
-import { UserDataTypes } from './Searchbar.types';
+import { UserDataTypes } from '../components/Searcher/Searcher.types';
 
 export const handleFetchData = async ()=>{
 
@@ -50,20 +49,5 @@ export const handleFetchData = async ()=>{
 		`
 	})
 	
-	console.log(data);
-
 	return data;
 	}
-
-	const addToContext = (data: UserDataTypes ) => {
-		console.log('hello');
-		
-	}
-
-export const handleSearch = async (e: React.FormEvent<HTMLFormElement>)=>{
-	e.preventDefault();
-	const data = await handleFetchData();
-	addToContext(data)
-}
-
-

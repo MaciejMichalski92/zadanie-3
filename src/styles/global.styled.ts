@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
-import theme from './theme';
+import theme, { sizes } from './theme';
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -28,6 +28,13 @@ export const GlobalStyle = createGlobalStyle`
 
 	main{
 		flex-grow: 1;
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(100px, 254px));
+		gap: 25px;
+		align-content: center;
+		justify-content: center;
+		max-width: ${sizes.desktop};
+		margin: 50px auto;
 	}
 
 	p {
@@ -47,6 +54,11 @@ export const GlobalStyle = createGlobalStyle`
 
 	h2 {
 		font-size: clamp(20px, 2vw, 26px);
+	}
+
+	a, a:visited {
+		color: ${theme.colors.black};
+		text-decoration: none;
 	}
 
 `;

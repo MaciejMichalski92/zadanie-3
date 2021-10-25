@@ -1,9 +1,7 @@
 import { createContext, useContext } from "react";
-import { GlobalContextTypes } from "./GlobalContext.types";
+import { UserDataTypes } from '../components/Searcher/Searcher.types';
 
-export const GlobalContext = createContext<GlobalContextTypes | null>(
-	{	randomDataFromContext: 'random'}
-)
+export const GlobalContext = createContext<UserDataTypes | null>(null)
 
 export const useGlobalContext = () => useContext(GlobalContext)
 
