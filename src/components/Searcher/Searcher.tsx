@@ -1,4 +1,4 @@
-import { ChangeEvent, useState } from 'react';
+import { useState } from 'react';
 import Title from '../Title';
 import RepoTile from '../RepoTile';
 import {StyledSearchbar, StyledSearchDiv} from './Searcher.styled';
