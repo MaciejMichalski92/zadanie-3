@@ -21,11 +21,11 @@ export const StyledRepoTile = styled.div`
 export const StyledRepoTitle = styled.h3`
 	font-size: 16px;
 	font-weight: bold;
-	margin: 20px 0 ;
+	margin: 10px 0 ;
 
 `
 export const StyledRepoDescription = styled.p`
-	font-size: 10px;
+	font-size: 13px;
 	text-align: center;
 	
 `
