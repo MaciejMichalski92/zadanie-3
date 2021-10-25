@@ -34,7 +34,7 @@ export const GlobalStyle = createGlobalStyle`
 		align-content: center;
 		justify-content: center;
 		max-width: ${sizes.desktop};
-		margin: 50px auto;
+		margin: 50px 0;
 	}
 
 	p {
