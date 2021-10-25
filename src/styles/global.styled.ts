@@ -35,6 +35,10 @@ export const GlobalStyle = createGlobalStyle`
 		justify-content: center;
 		max-width: ${sizes.desktop};
 		margin: 50px 0;
+
+		@media ${theme.breakpoints.tablet} {
+			margin: 50px auto;
+		}
 	}
 
 	p {
